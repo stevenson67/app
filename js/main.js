@@ -7,7 +7,7 @@
   \*******************************/
 /***/ (() => {
 
-const ticker = document.querySelectorAll('.treading-line__line-first');
+/*const ticker = document.querySelectorAll('.treading-line__line-first');
 ticker.forEach(i => {
   let text = " " + i.innerHTML;
   setInterval(function () {
@@ -46,7 +46,18 @@ ticker5.forEach(i => {
     text = text.slice(1) + text[0];
     i.innerHTML = text;
   }, 165);
+});*/
+
+$(function() {
+  $('.marquee').marquee({
+    duration: 20000,
+    startVisible: true,
+    duplicated: true
+  });
 });
+
+
+
 const links1 = document.querySelector('.links1'),
   links2 = document.querySelector('.links2'),
   links3 = document.querySelector('.links3'),
@@ -972,7 +983,7 @@ gsap.to(".cases__latter-horizontal-right-second", {
   }
 });
 gsap.to(".request__circle", {
-  borderRadius: "25%",
+  borderRadius: "17%",
   scrollTrigger: {
     trigger: ".request",
     scrub: 1,

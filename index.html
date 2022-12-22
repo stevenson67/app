@@ -42,7 +42,7 @@
             <span class="hero__letters hero__letters-left">Sha</span>
             <span class="hero__letters hero__letters-right">re</span>
           </h1>
-          <video src="img/video.mp4" autoplay loop class="hero__video"></video>
+          <video src="img/video.mp4" no-controls autoplay loop playsinline muted class="hero__video"></video>
           <div class="hero__wrapper">
             <div class="hero__descr">Креативное агентство</div>
           </div>
@@ -176,13 +176,16 @@
       <section class="cases">
         <div class="container">
           <div class="cases__wrapper">
+          <div class="cases__latter">
             <div class="cases__cube-vertical-right"><picture class="cases__img-vertical-right">
               <source srcset="img/Myata.avif" type="image/avif">
               <source srcset="img/Myata.webp" type="image/webp">
               <img loading="lazy" src="img/Myata.jpg" class="image" width="" height="" alt="">
             </picture></div>
-            <div class="cases__latter-vertical-right cases__latter-vertical-right-first">КЕ</div>
-            <div class="cases__latter-vertical-right cases__latter-vertical-right-second">ЙС</div>
+            
+              <div class="cases__latter-vertical-right cases__latter-vertical-right-first">КЕ</div>
+              <div class="cases__latter-vertical-right cases__latter-vertical-right-second">ЙС</div>
+            </div>
             <div class="cases__descr cases__descr-vertical-right">Маленькое описание кейса будет здесь</div>
           </div>
           <div class="cases__wrapper">
@@ -220,11 +223,21 @@
       </section>
       <section class="treading-line">
         <div class="treading-line__wrapper">
-          <div class="treading-line__line treading-line__line-first">7 лет агентство на московском рынке рекламы</div>
-          <div class="treading-line__line treading-line__line-second">10 лет средний стаж работы в рекламе руководителей отделов</div>
-          <div class="treading-line__line treading-line__line-third">15 штатных специалистов в команде</div>
-          <div class="treading-line__line treading-line__line-fourth">900 + подрядчиков в базе по разным направлениям</div>
-          <div class="treading-line__line treading-line__line-fifth">50+ брендов из разных сфер с которыми работали</div>
+          <div class="marquee" data-direction='right'>
+            <div class="treading-line__line treading-line__line-first">7 лет агентство на московском рынке рекламы</div>
+          </div>
+          <div class="marquee" data-direction='left'>
+            <div class="treading-line__line treading-line__line-second">10 лет средний стаж работы в рекламе руководителей отделов</div>
+          </div>
+          <div class="marquee" data-direction='right'>
+            <div class="treading-line__line treading-line__line-third">15 штатных специалистов в команде</div>
+          </div>
+          <div class="marquee" data-direction='left'>
+            <div class="treading-line__line treading-line__line-fourth">900 + подрядчиков в базе по разным направлениям</div>
+          </div>
+          <div class="marquee" data-direction='right'>
+            <div class="treading-line__line treading-line__line-fifth">50+ брендов из разных сфер с которыми работали</div>
+          </div>
         </div>
         <div class="treading-line__more"><a href="#">Подробнее об агентстве</a></div>
       </section>
@@ -310,5 +323,6 @@
 
   </div>
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
 </html>
